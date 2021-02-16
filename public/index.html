@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>RxTimer</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main__timer">
+      <time class="main__timer_value">00:00:00</time>
+      <span class="main__timer_format">HH:MM:SS</span>
+    </div>
+    <div class="main__timer-controls">
+      <button class="main__timer-controls_btn btn start-timer-btn">Start</button>
+      <button class="main__timer-controls_btn btn red accent-4 stop-timer-btn" disabled>Stop</button>
+      <button class="main__timer-controls_btn btn yellow wait-timer-btn" disabled>Wait</button>
+      <button class="main__timer-controls_btn btn reset-timer-btn" disabled>Reset</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
