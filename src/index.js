@@ -2,6 +2,7 @@ import { fromEvent } from 'rxjs';
 import { map, buffer, filter, debounceTime } from 'rxjs/operators';
 
 const DEFAULT_TIMER_VALUE = '00:00:00';
+const DOUBLE_CLICK_DURATION = 299;
 
 const mainElement = document.querySelector('.main');
 const timerValue = mainElement.querySelector('.main__timer_value');
@@ -69,7 +70,7 @@ startTimerClick$.subscribe(() => {
     .pipe(
       buffer(
         waitTimerClick$.pipe(
-          debounceTime(299),
+          debounceTime(DOUBLE_CLICK_DURATION),
         )
       ),
       map((list) => list.length),
